@@ -23,15 +23,15 @@ const utilisateurs = [
 const parent = document.querySelector(".container");
 const cards = parent.querySelectorAll(".card");
 // const name = cards.querySelector(".card-title");
-for(let i=0 ; i < cards.length ; i++){
-    const card = cards[i];
+cards.forEach(function(card,index){
+    
     const name=card.querySelector(".card-title");
     const email=card.querySelector(".card-email");
     const role=card.querySelector(".card-role");
-    name.textContent =utilisateurs[i].nom;
-    email.textContent=utilisateurs[i].email;
-    role.textContent=utilisateurs[i].role;
+    name.textContent =utilisateurs[index].nom;
+    email.textContent=utilisateurs[index].email;
+    role.textContent=utilisateurs[index].role;
     
 
 
-}
+})
