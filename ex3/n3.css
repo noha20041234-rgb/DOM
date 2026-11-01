@@ -1,0 +1,18 @@
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.menu li {
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #eeeeee;
+    color: black;
+    border-radius: 5px;
+}
+.active {
+    background-color: blue;
+    color: white;
+}
